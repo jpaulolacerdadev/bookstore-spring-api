@@ -38,6 +38,21 @@ public class BookModel implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "author_id"))
             private Set<AuthorModel> authors = new HashSet<>();
 
+    /**
+     * Cria o relacionamento com o ReviewModel
+     * Cascade replica tudo que acontece com o Objeto relacionado
+     * ex: apago um livro = apago junto a review
+     */
+    @OneToOne(mappedBy ="book",cascade = CascadeType.ALL)
+    private ReviewModel review;
+
+    public ReviewModel getReview() {
+        return review;
+    }
+
+    public void setReview(ReviewModel review) {
+        this.review = review;
+    }
 
     public Long getId() {
         return id;
