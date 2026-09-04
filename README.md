@@ -40,15 +40,10 @@ O projeto segue boas práticas de desenvolvimento backend utilizando:
 Os endpoints podem ser testados utilizando ferramentas como:
 
 - Postman
-- Insomnia
+- Swagger
 
 ---
 
-## 🚧 Status do Projeto
-
-Projeto em desenvolvimento, com novas funcionalidades e melhorias sendo adicionadas continuamente como parte do processo de aprendizado e prática em desenvolvimento backend.
-
----
 
 ## 📌 Objetivo
 
